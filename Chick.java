@@ -1,7 +1,7 @@
 class Chick implements Animal 
 {     
-    Private String myType;
-    Private String mySound;
+    private String myType;
+    private String mySound;
     public Chick(String type, String sound)
     {
     	myType = type;
@@ -9,14 +9,14 @@ class Chick implements Animal
     }
     public Chick()
     {
-    	myType = "unknown";
-    	mySound = "unknown";
+    	myType = "chick";
+    	mySound = "cluck";
     }
-    Public String getSound()
+    public String getSound()
     {
     	return mySound;
     }
-    Public String getType()
+    public String getType()
     {
     	return myType;
     }
