@@ -2,19 +2,29 @@ class Chick implements Animal
 {     
     private String myType;
     private String mySound;
-    public Chick(String type, String sound)
+    private String myOtherSound;
+    public Chick(String type, String othersound, String sound)
     {
     	myType = type;
     	mySound = sound;
+      myOtherSound = othersound;
     }
     public Chick()
     {
     	myType = "chick";
     	mySound = "cluck";
+      myOtherSound = "cheep";
     }
     public String getSound()
     {
-    	return mySound;
+    	if((Math.random()*1)<.5)
+    {
+      return mySound;
+    }
+    else
+    {
+      return myOtherSound;
+    }
     }
     public String getType()
     {
